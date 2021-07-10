@@ -20,12 +20,14 @@ body{
     height: 120px;
     border-radius: 60px;
     background: rgb(255, 255, 255);
-    transition: top linear 5s, right linear 5s, background-color linear 8s ;
+    box-shadow: 0px 0px 50px 15px rgba(255, 255, 255, 0.28);
+    transition: top linear 5s, right linear 5s, background-color linear 8s, transform linear 5s;
 }
 body:hover .sun{
-    top: -100px;
-    right: -100px;
+    top: -122px;
+    right: -122px;
     background-color: red;
+    transform: scale(1.5);
 }
 body:hover{
     background-image: radial-gradient( #fbc91f, #bc4f0e);
@@ -35,10 +37,11 @@ body:hover{
     width: 700px;
     height: 350px;
     border-bottom: 8px solid green;
-    transition: width linear 5s;
+    transition: width linear 5s, transform linear 5s;
 }
 .house:hover{
     width: 800px;
+    transform: scale(1.5);
 }
 .main{
     position: absolute;
