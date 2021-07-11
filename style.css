@@ -83,6 +83,9 @@ body:hover .sun{
 .main:hover .tree{
     background-color: green;
 }
+.main:hover .door{
+    background-color: green;
+}
 .main:hover .tree2{
     background-color: rgb(8, 95, 8);
 }
@@ -239,11 +242,8 @@ body:hover .sun{
     background: #4d2418;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
-    transition: width linear 5s;
+    transition: width linear 5s, background-color linear 5s;
 }
-/* .door:hover{
-    width: 90px;
-} */
 .door::before{
     content: '';
     position: absolute;
